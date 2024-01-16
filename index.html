@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <script src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+    <link rel="manifest" href="logo/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-cover bg-repeat  bg-[#030020]">
+    <nav class="mt-6">
+        <div class="flex flex-wrap items-center justify-between  p-4 mx-10">
+            <div class="flex">
+                <span onclick="Home()" class="self-center text-blue-500 text-3xl font-mono cursor-pointer">Tech Learn</span>
+            </div>
+            <div class="justify-between items-center">
+                <ul class="flex flex-row text-white space-x-12 ">
+
+                    <li onclick="Home() " class="hover: -translate-y-0 hover:scale-110 duration-300 underline underline-offset-4 decoration-[#0094FF] decoration-2 font-primary cursor-pointer">Home</li>
+                    <li onclick="Courses() " class="hover: -translate-y-0 hover:scale-110 duration-300 font-primary cursor-pointer">Courses</li>
+                    <li onclick="Notes() " class="hover: -translate-y-0 hover:scale-110 duration-300 font-primary cursor-pointer">Notes</li>
+                    <li onclick="About() " class="hover: -translate-y-0 hover:scale-110 duration-300 font-primary cursor-pointer">About</li>
+                </ul>
+            </div>
+            <div class="flex justify-end ">
+                <span class=" text-white  space-x-8">
+                    <input type="submit" onclick="return window.location.href='login.html'" value="Login" class="hover:bg-[#0094FF] rounded-md border-2 px-2 py-1 border-[#0094FF] font-primary cursor-pointer"/>
+                    <input type="submit" onclick="return window.location.href='signup.html'" value="Sign Up" class=" rounded-md px-2 py-1 border-2 border-[#6F4BD5] bg-[#6F4BD5] font-primary cursor-pointer"/>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <main class="my-8 justify-around font-primary">
+        <div class="mx-16 flex items-center text-white ">
+
+            <div class="pl-5 py-40 ">
+                <p class="text-2xl text-blue-400 ">Let's begin</p>
+                The journey starts from now. Well, there is only one piece of advice I can give you guys,
+                <p class="text-pink-400 ">'The secret of happiness is to see all the marvels of the world, and never to forget the drops of oil on the spoon'</p> You may get off track however, you will always be drawn and guided to the right course.Every person, experience or
+                obstacle you encounter is for your highest growth and healing.
+                <p class="text-orange-400 "> All the Best for your bright future. Thank you for being part of this course. </p>
+                This is going to be a roller coaster for you. I know you guys are working hard just
+                <a class="text-pink-400 "> hustle.</a>
+
+            </div>
+            <div class="flex items-center mt-0 ml-50 ">
+                <img src="images/edu.png " class="w-84 " alt=" ">
+            </div>
+
+        </div>
+        <div class="text-center relative bg-animation text-slate-300 p-16 ">
+
+        </div>
+        <div class="text-center mt-8 text-2xl text-gray-500 ">
+            <p class="mr-50 ">
+                <p>WE ARE ON A MISSION, JOIN US</p>
+                <img src="images/onamission.png " class="mx-auto " alt=" ">
+            </p>
+        </div>
+        <div class="justify-center -mt-5">
+            <p class="text-center text-2xl text-pink-300 font-sans">TOP EDUCATORS</p>
+            <a class="flex space-x-16">
+                <img src="images/shradha_aman.png" class="w-[500px] h-80 ml-[420px] mt-16 mb-7 justify-center rounded-lg" alt="">
+                <img src="images/codewithharry.jpg" class="w-50 h-80 rounded-lg mt-16" alt="">
+            </a>
+            <a>
+                <div class="mb-4 flex">
+                    <pre class="ml-[470px] text-pink-500">     No angel is coming to work on our dreams.
+  If we won't, then who will? #hustle #doitnow 
+                             --Aman Dhattarwal
+</pre>
+                    <pre class="ml-[10px] text-purple-500">     Every master was once a beginner.
+     Every feature was once a bug. 
+                               --Code with Harry
+  </pre>
+                </div>
+                <div class="mb-4 flex">
+                    <pre class="ml-[470px] text-blue-300">      The smarter you get, the less you speak.
+                              --Shradha Khapra
+</pre>
+
+                </div>
+            </a>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: Outfit-Light;
+    src: url("fonts/Outfit-Light.ttf") format("truetype");
+}
+
+.bg-animation {
+    position: relative;
+}
+
+.bg-animation::before {
+    content: "It's time to explore!";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 3%;
+}
+
+.bg-animation::after {
+    content: "Let's enjoy the Tech Learn";
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 1.5rem;
+    --angle: 0deg;
+    border-radius: 0.6rem;
+    padding-top: 2%;
+    @apply absolute inset-0 z-0 bg-gradient-to-r from-[#1f2937] via-purple-500 to-pink-500
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate-animation {
+    to {
+        --angle: 360deg
+    }
+}
+
+@supports (background: paint(houdini)) {
+    .bg-animation:after {
+        animation: rotate-animation 5s linear infinite;
+        background: linear-gradient(var(--angle), #6d6bad, #436fce, #c65c93, #3c3d7a);
+    }
+}
